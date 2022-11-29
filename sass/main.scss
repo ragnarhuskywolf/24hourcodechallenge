@@ -26,6 +26,7 @@ html {
                 &.button-primary {
                     color: #000;
                     background:#FFF;
+                    border:1px solid #FFF;
                     &:hover {
                         color: #FFF;
                         background:#000;
@@ -35,6 +36,7 @@ html {
                 &.button-secondary {
                     color: #FFF;
                     background:#000;
+                    border:1px solid #000;
                     &:hover {
                         color: #000;
                         background:#FFF;
@@ -55,7 +57,7 @@ html {
                         display: flex;
                         align-items: center;
                         gap: 10px;
-                        padding-left: 0;
+                        padding-left: 10px;
                         li {
                             list-style-type: none;
                             &:hover {
@@ -112,6 +114,7 @@ html {
                     justify-content: space-between;
                     align-items: center;
                     height: 50px;
+                    padding:0 20px;
                     div {
                         display: flex;
                         align-items: center;
@@ -266,6 +269,15 @@ html {
                     .category {
                         padding: 20px;
                         width:calc(25% - 40px);
+                        &:hover {
+                            a {
+                                .img-hldr {
+                                    img {
+                                        transform: scale(1.1);
+                                    }
+                                }
+                            }
+                        }
                         a {
                             text-decoration: none;
                             color:#000;
@@ -273,10 +285,12 @@ html {
                             .img-hldr {
                                 width: 100%;
                                 height: 300px;
+                                overflow: hidden;
                                 img {
                                     object-fit: cover;
                                     height: 100%;
                                     width: 100%;
+                                    transition: .2s ease;
                                 }
                             }
                             .cat-name {
@@ -307,6 +321,10 @@ html {
                             font-weight: 600;
                             text-decoration: none;
                             color:#000;
+                            &:hover {
+                                background: #000;
+                                color:#FFF;
+                            }
                         }
                     }
                 }
@@ -354,9 +372,21 @@ html {
                     .product {
                         margin: 0 20px;
                         max-width: 225px;
+                        cursor: pointer;
+                        &:hover {
+                            .img-hldr {
+                                img {
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
                         .img-hldr {
                             max-width: 225px;
                             height: 300px;
+                            overflow: hidden;
+                            img {
+                                transition: .2s ease;
+                            }
                         }
                         .prod-name {
                             min-height: 50px;
@@ -411,9 +441,21 @@ html {
                     margin: 0 60px;
                     justify-content: space-between;
                     .post {
+                        cursor: pointer;
+                        &:hover {
+                            .img-hldr {
+                                img {
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
                         .img-hldr {
                             max-width: 225px;
                             max-height: 225px;
+                            overflow: hidden;
+                            img {
+                                transition: .2s ease;
+                            }
                         }
                     }
                 }
@@ -511,7 +553,7 @@ html {
                                 }
                                 a {
                                     text-decoration: none;
-                                    
+                                    color: #000;
                                 }
                             }
                         }
