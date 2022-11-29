@@ -4,7 +4,14 @@ html {
         background-color: white;
         margin: 0;
         font-family: "Montserrat", Arial, Helvetica, sans-serif;
-
+        h1,h2,h3 {
+            margin: 0;
+        }
+        .heading {
+            h3 {
+                margin: 50px 0 40px;
+            }
+        }
         a {
             &.button {
                     padding:10px 20px;
@@ -327,6 +334,53 @@ html {
                         }
                         .cta {
                             margin-top: 43px;
+                        }
+                    }
+                }
+            }
+            #recently-bought {
+                .heading {
+                    font-size: 36px;
+                    line-height: 44px;
+                    text-align: center;
+                }
+                .products {
+                    margin: 0 40px;
+                    display: flex;
+                    justify-content: space-between;
+                    .product {
+                        margin: 0 20px;
+                        max-width: 225px;
+                        .img-hldr {
+                            max-width: 225px;
+                            height: 300px;
+                        }
+                        .prod-name {
+                            min-height: 50px;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 17px;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .prod-price {
+                            display: flex;
+                            font-size: 14px;
+                            font-weight: 800;
+                            line-height: 17px;
+                            .sale-price {
+                                display: none;
+                            }
+                        }
+                        &[data-sale="true"] {
+                            .sale-price {
+                                display: block;
+                                margin-right: 30px;
+                                color:#C1272D;
+                            }
+                            .price {
+                                text-decoration: line-through
+                            }
                         }
                     }
                 }
