@@ -51,6 +51,7 @@ gulp.task('serve', ['sass'], function() {
     });
 
     gulp.watch("sass/*.scss", ['sass']);
+    gulp.watch('js/*.js', ['scripts']);
     gulp.watch("*.html").on('change', browserSync.reload);
 });
 
