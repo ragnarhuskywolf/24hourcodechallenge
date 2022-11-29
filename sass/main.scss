@@ -8,20 +8,29 @@ html {
         a {
             &.button {
                     padding:10px 20px;
-                    display: block;
+                    display: inline-block;
                     color: #FFF;
                     background:#000;
                     text-decoration: none;
                     font-size: 18px;
                     font-weight: 600;
                     line-height: 22px;
+                    transition: 500ms;
                 &.button-primary {
                     color: #000;
                     background:#FFF;
+                    &:hover {
+                        color: #FFF;
+                        background:#000;
+                    }
                 }
                 &.button-secondary {
                     color: #FFF;
                     background:#000;
+                    &:hover {
+                        color: #000;
+                        background:#FFF;
+                    }
                 }
             }
         }
@@ -280,6 +289,7 @@ html {
                     justify-content: center;
                     .hashtag {
                         a {
+                            display: block;
                             border: 1px solid #000;
                             border-radius: 25px;
                             padding:10px 20px;
@@ -292,7 +302,35 @@ html {
                     }
                 }
             }
-
+            #new-arrival {
+                margin-top: 65px;
+                .banner {
+                    height: 400px;
+                    background-size: cover !important;
+                    display: flex;
+                    align-items: center;
+                    .content {
+                        max-width:640px;
+                        margin-left: auto;
+                        .heading {
+                            font-size: 86px;
+                            line-height: 86px;
+                            font-weight: 800;
+                            color: #FFF;
+                        }
+                        .short {
+                            margin-top: 21px;
+                            font-size: 28px;
+                            font-weight: 600;
+                            color: #FFF;
+                            line-height: 34px;
+                        }
+                        .cta {
+                            margin-top: 43px;
+                        }
+                    }
+                }
+            }
         }
 
     }
