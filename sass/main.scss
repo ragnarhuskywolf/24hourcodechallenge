@@ -1,9 +1,98 @@
+
 html {
     body {
         background-color: white;
         margin: 0;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        header {
+            nav {
+                max-width: 1440px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .left-menu, .right-menu {
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        padding-left: 0;
+                        li {
+                            list-style-type: none;
+                            &:hover {
+                                a { 
+                                    font-weight: 600;
+                                }
+                            }
+                            a {
+                                padding: 9px 15px;
+                                text-transform: uppercase;
+                                text-decoration: none;
+                                font-size:14px;
+                                font-weight: 400;
+                                color:#000;
+                            }
+                            &.currency  {
+                                .hldr {
+                                    border: 1px solid #F2F2F2;
+                                    border-radius: 25px;
+                                    padding:5px;
+                                    display: flex;
+                                    gap: 2px;;
+                                    justify-content: center;
+                                    align-items: center;
+                                    img:last-child {
+                                        margin-left: 10px;
+                                        padding: 0 3px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .right-menu {
+                   ul {
+                       gap: 10px;
+                       li {
+                          a {
+                            padding: 5px 5px;
+                          } 
+                       }
+                   }
+                }
+            }
+            .logo {
+
+            }
+            .nav-banner {
+                background-color:  #E5E5E5;
+                height: 50px;
+                .deals {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 50px;
+                    div {
+                        display: flex;
+                        align-items: center;
+                        img {
+                            margin-right: 16px;
+                        }
+                        span {
+                            font-size: 12px;
+                            line-height: 14.6px;
+                        }
+                    }
+                }
+            }
+        }
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
         #main {
             background-color: red;
         }
+
     }
 }
