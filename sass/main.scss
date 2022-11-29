@@ -29,6 +29,7 @@ html {
                     &:hover {
                         color: #FFF;
                         background:#000;
+                        border:1px solid #FFF;
                     }
                 }
                 &.button-secondary {
@@ -37,6 +38,7 @@ html {
                     &:hover {
                         color: #000;
                         background:#FFF;
+                        border:1px solid #000;
                     }
                 }
             }
@@ -424,7 +426,116 @@ html {
                     }
                 }
             }
+            #newsletter {
+                .sign-up {
+                    background:#000;
+                    display: flex;
+                    height: 75px;
+                    align-items: center;
+                    justify-content: center;
+                    gap:50px;
+                    .cta {
+                        color: #FFF;
+                        font-size: 32px;
+                        line-height: 39px;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                    }
+                    .form {
+                        max-width: 354px;
+                        width: 100%;
+                        display: flex;
+                        input[type=email] {
+                            height: 35px;
+                            padding:0;
+                            border: 0;
+                            width: calc(100% - 37px);
+                            background:#F2F2F2;
+                            font-size:14px;
+                            text-indent: 20px;
+                            line-height: 17px;
+                            font-family: "Montserrat";
+                        }
+                        .form-submit {
+                            width: 35px;
+                            height: 35px;
+                            position: relative;
+                            cursor: pointer;
+                            &::before {
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%,-50%) rotate(270deg);
+                                content: "";
+                                background: url('../../img/down.svg') ;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                width: 20px;
+                                height: 20px;
+                            }
+                            input[type=submit] {
+                                cursor: pointer;
+                                width: 35px;
+                                height: 35px;
+                                appearance: none;
+                                border: 0;
+                                background:#FFF;
+                            }
+                            
+                        }
+                        
+                    }
+                }
+            }
+            footer {
+               
+                .footer-container {
+                    padding:40px;
+                    display: flex;
+                    .links {
+                        width:150px;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 14.63px;
+                        .heading {
+                            font-weight: 600;
+                        }
+                        ul {
+                            padding-left: 0;
+                            li {
+                                list-style-type: none;
+                                padding:10px 10px;
+                                padding-left: 0;
+                                &:hover {
+                                    font-weight: 600;
+                                }
+                                a {
+                                    text-decoration: none;
+                                    
+                                }
+                            }
+                        }
+                        &.social-payments {
+                            margin-left: 150px;
+                            ul {
+                                display: flex;
+                                li {
+
+                                }
+                            }
+                        }
+                    }
+                }
+                .copyright {
+                    padding:40px;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size:12px;
+                    font-weight: 400;
+                }
+               
+            }
         }
 
     }
-}
+} 
