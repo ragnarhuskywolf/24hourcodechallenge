@@ -339,6 +339,7 @@ html {
                 }
             }
             #recently-bought {
+                margin-bottom: 50px;
                 .heading {
                     font-size: 36px;
                     line-height: 44px;
@@ -382,6 +383,44 @@ html {
                                 text-decoration: line-through
                             }
                         }
+                    }
+                }
+            }
+            #insta {
+                background: #F2F2F2;
+                padding-bottom: 50px;
+                .heading {
+                    text-align: center;
+                    h3 {
+                        font-size: 36px;
+                        line-height: 44px;
+                        font-weight: 800;
+                        margin: 50px 0 30px;
+                        display: inline-block;
+                    }
+                }
+                .short {
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+                .posts {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 60px;
+                    justify-content: space-between;
+                    .post {
+                        .img-hldr {
+                            max-width: 225px;
+                            max-height: 225px;
+                        }
+                    }
+                }
+                .cta {
+                    text-align: center;
+                    margin-top: 30px;
+                    display: block;
+                    a {
+                        text-transform: uppercase;
                     }
                 }
             }
